@@ -23,12 +23,13 @@
     <h2>Resumen</h2>
     <p>Equira es una app para registrar tus ingresos, gastos y metas de ahorro. Todo lo que cargás queda guardado solamente en tu teléfono, cifrado. No tenemos servidores, no creamos cuentas y nunca vemos tus datos financieros.</p>
     <p>La app es gratuita y muestra anuncios de Google AdMob. Para eso usa internet, y Google recibe algunos datos del dispositivo (ver &quot;Anuncios&quot;). Tus datos financieros no se envían nunca, tampoco para los anuncios.</p>
+    <p>Si cargás montos en más de una moneda, la app también usa internet para descargar las cotizaciones del día (ver &quot;Cotizaciones de monedas&quot;).</p>
     <h2>Qué datos guarda la app</h2>
     <p>Los que vos cargás: ingresos, gastos, categorías, metas de ahorro y sus aportes, y tus preferencias (moneda, tema, bloqueo de la app). No pedimos nombre, email, teléfono, ubicación, contactos ni ningún otro dato personal.</p>
     <h2>Dónde se guardan y cómo se protegen</h2>
     <p>Los datos se guardan en el almacenamiento interno de la app, en tu dispositivo, cifrados con AES-256. La clave de cifrado se genera en tu teléfono y se guarda en el almacén seguro del sistema (Android Keystore o Keychain de iOS); nunca sale del dispositivo.</p>
     <p>La copia de seguridad automática de Android está desactivada para esta app, así que tus datos tampoco se suben a Google Drive.</p>
-    <p>La app usa internet solamente para mostrar anuncios. No hay sincronización ni copias en la nube: tus ingresos, gastos, categorías y metas no salen del dispositivo.</p>
+    <p>La app usa internet solamente para mostrar anuncios y descargar cotizaciones. No hay sincronización ni copias en la nube: tus ingresos, gastos, categorías y metas no salen del dispositivo.</p>
     <h2>Huella, rostro y PIN</h2>
     <p>Si activás &quot;Bloquear con huella o PIN&quot;, la verificación la hace el sistema operativo. La app nunca accede a tu huella, a tu rostro ni a tu PIN: solo recibe si la verificación salió bien o no.</p>
     <h2>Respaldos</h2>
@@ -37,8 +38,10 @@
     <p>Equira muestra anuncios de Google AdMob, un servicio de Google LLC: un banner en algunas pantallas y, solo si lo pedís, un video para usar la app 24 horas sin anuncios.</p>
     <p>Para mostrar y medir los anuncios, el SDK de AdMob recopila datos del dispositivo y los envía a Google: el identificador de publicidad, la dirección IP (de la que se puede estimar una ubicación aproximada), datos técnicos del teléfono y del sistema, e información sobre cómo interactuás con los anuncios. Google los usa para mostrar anuncios, medirlos, prevenir fraudes y, si lo permitís, personalizarlos. Cómo usa Google esos datos: https://policies.google.com/technologies/partner-sites</p>
     <p>Si estás en el Espacio Económico Europeo, el Reino Unido o Suiza, la app te pide consentimiento antes de usar estos datos, y podés cambiar tu elección en Ajustes → Opciones de privacidad de anuncios. En cualquier país podés restablecer o eliminar el identificador de publicidad desde los ajustes del teléfono, y desactivar los anuncios personalizados en https://adssettings.google.com</p>
+    <h2>Cotizaciones de monedas</h2>
+    <p>Si tenés ingresos o gastos en una moneda distinta de la principal, la app descarga cada algunas horas las cotizaciones públicas del día desde cdn.jsdelivr.net o, si ese servicio falla, desde latest.currency-api.pages.dev (servidos por jsDelivr y Cloudflare). La consulta no lleva ningún dato tuyo: es la misma para todos. Como en cualquier conexión a internet, esos servicios ven la dirección IP desde la que se hace. Si todo está en una sola moneda, la app no las descarga.</p>
     <h2>Con quién compartimos datos</h2>
-    <p>Tus datos financieros, con nadie. Los únicos datos que salen del teléfono son los que recibe Google para los anuncios, descritos arriba. La app no incluye analíticas ni reportes de errores.</p>
+    <p>Tus datos financieros, con nadie. Los únicos datos que salen del teléfono son los que recibe Google para los anuncios, descritos arriba, y la dirección IP que ven los servicios de cotizaciones al descargarlas. La app no incluye analíticas ni reportes de errores.</p>
     <h2>Cuánto tiempo se guardan y cómo borrarlos</h2>
     <p>Tus datos quedan en el teléfono hasta que los borres. Podés eliminar registros desde la app, o borrar todo desinstalando Equira o usando &quot;Borrar datos&quot; de la app en los ajustes del sistema. Como no guardamos nada en servidores, no hay datos tuyos que tengamos que eliminar. Los datos de anuncios los conserva Google según su política de privacidad: https://policies.google.com/privacy</p>
     <h2>Menores de edad</h2>
